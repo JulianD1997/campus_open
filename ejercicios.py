@@ -51,7 +51,7 @@ for i in range(100,0,-1):
     print(i)"""
 
 """Escribe una función que calcule el área de un triángulo, recibiendo la altura y la base como parámetros y otra función que calcule el área de un círculo recibiendo el radio del mismo."""
-import math
+"""import math
 
 def area_triangulo(base,altura):
     return f"Area del triangulo = {(base*altura)/2}"
@@ -68,5 +68,24 @@ if __name__ == "__main__":
     print(area_circulo(5))
     print(area_circulo(10))
     print(area_circulo(2))
-    print(area_circulo(23))
+    print(area_circulo(23))"""
 
+"""Escribe una función que pueda decirte si un número (número entero) es primo o no."""
+
+"""def numero_primo(numero):
+
+    for i in range(2,numero):
+        if numero % i == 0:
+            return f"{numero} No es primo"
+    return f"{numero} Es primo"
+
+if __name__ == "__main__":
+    print(numero_primo(3))
+    print(numero_primo(4))
+    print(numero_primo(13))
+    print(numero_primo(20))
+    print(numero_primo(41))
+    print(numero_primo(45))
+    print(numero_primo(67))
+    print(numero_primo(72))
+    print(numero_primo(89))"""
