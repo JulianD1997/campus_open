@@ -89,3 +89,26 @@ if __name__ == "__main__":
     print(numero_primo(67))
     print(numero_primo(72))
     print(numero_primo(89))"""
+"""Escribe una función que pueda decirte si un año (número entero) es bisiesto o no."""
+
+def leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return f"El {year} es año bisiesto"
+            else :
+                return f"El {year} no es año bisiesto"
+        else:
+            return f"El {year} es año bisiesto"
+    else :
+        return f"El {year} no es año bisiesto"
+if __name__ == "__main__":
+    print(leap_year(1992))
+    print(leap_year(2000))
+    print(leap_year(1900))
+    print(leap_year(2012))
+    print(leap_year(2024))
+    print(leap_year(2020))
+    print(leap_year(2100))
+    print(leap_year(1988))
+    print(leap_year(1997))
