@@ -91,7 +91,7 @@ if __name__ == "__main__":
     print(numero_primo(89))"""
 """Escribe una función que pueda decirte si un año (número entero) es bisiesto o no."""
 
-def leap_year(year):
+"""def leap_year(year):
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -111,4 +111,48 @@ if __name__ == "__main__":
     print(leap_year(2020))
     print(leap_year(2100))
     print(leap_year(1988))
-    print(leap_year(1997))
+    print(leap_year(1997))"""
+"""
+En este ejercicio vais a crear la clase Vehículo la cual tendrá los siguientes atributos:
+
+Color
+
+Ruedas
+
+Puertas
+
+Por otro lado crearéis la clase Coche la cual heredará de Vehículo y tendrá los siguientes atributos:
+
+Velocidad
+
+Cilindrada
+
+Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por consola.
+"""
+class Vehículo:
+    def __init__(self,color,ruedas,puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+class Coche(Vehículo):
+    def __init__(self,color,ruedas,puertas,velocidad,cilindrada):
+        super().__init__(color,ruedas,puertas)
+        self.velocidad = velocidad
+        self.cilindrada = cilindrada
+    def __str__(self):
+        return f""""
+        Color : {self.color}
+        ruedas : {self.ruedas}
+        puertas : {self.puertas}
+        velocidad : {self.velocidad}
+        cilindrada : {self.cilindrada}"""
+
+if __name__ == "__main__":
+    mi_coche = Coche("Negro",4,4,120,6.2)
+    print(mi_coche)
+    mi_coche_1 = Coche("Rojo",4,2,160,8.5)
+    print(mi_coche_1)
+    mi_coche_2 = Coche("Gris",4,2,180,3.8)
+    print(mi_coche_2)
+    mi_coche_3 = Coche("Blanco",4,4,200,9.9)
+    print(mi_coche_3)
