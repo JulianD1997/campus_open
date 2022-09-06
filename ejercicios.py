@@ -129,7 +129,7 @@ Cilindrada
 
 Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por consola.
 """
-class Vehículo:
+"""class Vehículo:
     def __init__(self,color,ruedas,puertas):
         self.color = color
         self.ruedas = ruedas
@@ -140,12 +140,12 @@ class Coche(Vehículo):
         self.velocidad = velocidad
         self.cilindrada = cilindrada
     def __str__(self):
-        return f""""
-        Color : {self.color}
-        ruedas : {self.ruedas}
-        puertas : {self.puertas}
-        velocidad : {self.velocidad}
-        cilindrada : {self.cilindrada}"""
+        #return f#\"""
+        #Color : {self.color}
+        #ruedas : {self.ruedas}
+        #puertas : {self.puertas}
+        #velocidad : {self.velocidad}
+        #cilindrada : {self.cilindrada}\"""
 
 if __name__ == "__main__":
     mi_coche = Coche("Negro",4,4,120,6.2)
@@ -155,4 +155,30 @@ if __name__ == "__main__":
     mi_coche_2 = Coche("Gris",4,2,180,3.8)
     print(mi_coche_2)
     mi_coche_3 = Coche("Blanco",4,4,200,9.9)
-    print(mi_coche_3)
+    print(mi_coche_3)"""
+
+"""En este segundo ejercicio, tendréis que crear un programa que tenga una clase llamada Alumno que tenga como 
+atributos su nombre y su nota. Deberéis de definir los métodos para inicializar sus atributos, imprimirlos y 
+mostrar un mensaje con el resultado de la nota y si ha aprobado o no."""
+class Alumno:
+    def __init__(self, nombre,nota):
+        self.__nombre = nombre
+        self.__nota = nota
+    def __esta_aprobado(self):
+        if self.__nota >= 7 :
+            return "Aprobo"
+        else:
+            return "Desaprobo"
+    def __str__(self):
+        return f"{self.__nombre} con nota {self.__nota}\n{self.__esta_aprobado()}"
+if __name__ == "__main__":
+    alumno_1 = Alumno("Juan",6.8)
+    print(alumno_1)
+    alumno_2 = Alumno("Julian",9)
+    print(alumno_2)
+    alumno_3 = Alumno("Sara",7.0)
+    print(alumno_3)
+    alumno_3 = Alumno("Luisa",5.6)
+    print(alumno_3)
+    alumno_4 = Alumno("Lorena",10)
+    print(alumno_4)
